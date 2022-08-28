@@ -7,6 +7,7 @@
     <title>Week 2 Final Project</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section>
@@ -38,6 +39,34 @@
                         <a href="#" class="nav__link--primary">Sign Up</a>
                     </li>
                 </ul>
+                <button class="btn--menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu--backdrop">
+                    <button class="btn--menu btn--menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu--links">
+                        <li class="menu--list">
+                            <a href="#" class="menu--link" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu--list">
+                            <a href="#" class="menu--link" onclick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu--list">
+                            <a href="#" class="menu--link no-cursor" onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu--list">
+                            <a href="#" class="menu--link no-cursor" onclick="closeMenu()">Contact Us</a>
+                        </li>
+                        <li class="menu--list">
+                            <a href="#" class="menu--link no-cursor" onclick="closeMenu()">Login</a>
+                        </li>
+                        <li class="menu--list">
+                            <a href="#" class="menu--link no-cursor nav__link--primary" onclick="closeMenu()">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>  
             </nav>
         </div>
         <div class="row main1__row">
@@ -182,9 +211,9 @@
             <div class="row">
                 <div class="features__container">
                     <div class="features__text">
-                        <h3 class="features__tag">QUALITY WORK</h3>
+                        <h3 class="features__tag features__tag--responsive">QUALITY WORK</h3>
                         <div class="features__header1">
-                            <h1 class="features__title">Designed & Developed by <span class="purple">Professionals</span> </h1>
+                            <h1 class="features__title features__title--responsive">Designed & Developed by <span class="purple">Professionals</span> </h1>
                         </div>
                         <p class="features__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <div class="features__button--wrapper">
@@ -233,9 +262,9 @@
                 </div>
                 <div class="features__container2">
                     <div class="features__text">
-                        <h3 class="features__tag">VALUES</h3>
+                        <h3 class="features__tag--responsive">VALUES</h3>
                         <div class="features__header1">
-                            <h1 class="features__title">We Always Abide by Our <span class="purple">Principles.</span> </h1>
+                            <h1 class="features__title--responsive">We Always Abide by Our <span class="purple">Principles.</span> </h1>
                         </div>
                         <p class="features__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <div class="features_tagsss">
@@ -262,9 +291,9 @@
                             <a href="#" class="features__button--primary">Learn More</a>
                         </div>
                     </div>
-                    <div class="features__img2">
+                    <div class="features__img2 features__img2--responsive">
                         <figure>
-                            <img src="assets/undraw tag.svg" alt="" class="features__img--sc2">
+                            <img src="./assets/undraw tag.svg" alt="" class="features__img--sc2 features__img--sc2--responsive">
                         </figure>
                     </div>
                 </div>
